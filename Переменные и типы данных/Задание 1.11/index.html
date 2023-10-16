@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Курс JavaScript</title>
+	<script>
+		var student = new Object();
+		student.surname ="Сорокина "
+		student.name ="Екатерина "
+		student.patronymic ="Сергеевна "
+		student.ocupation ="Студент"
+		student.degree ="Среднее"
+		student.category ="Первая"
+		student.education ="МпК"
+		student.discipline ="Информатика"
+		student.note ="-"
+
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<h1 align="center">Введение в JavaScript</h1>
+	</header>
+
+	<div class="content">
+		<script>
+			let line = `
+			<h2> ${student.surname} ${student.name} ${student.patronymic}</h2>
+			<p><i>Должность:</i> ${student.ocupation} </p>
+			<p><i>Уровень образования:</i> ${student.degree} </p>
+			<p><i>Категория:</i> ${student.category} </p>
+			<p><i>Образование:</i> ${student.education} </p>
+			<p><i>Дисциплина:</i> ${student.discipline} </p>
+			<p><i>Примечание:</i> ${student.note} </p>`;
+			document.write(line);
+		</script>
+	</div>
+
+	<footer align="center">
+		<h3>Добро пожаловать на pechora_PROger</h3>
+		<a href="https://vk.com/pechora_proger" target="__blank">pechora_PROger</a>
+	</footer>
+
+</body>
+
+</html>
